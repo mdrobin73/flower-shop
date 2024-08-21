@@ -4,8 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: "Lato", sans-serif;
 }
+
 p {
     font-family: lato;
     font-size: 18px;
@@ -13,20 +17,28 @@ p {
     line-height: 28px;
     font-style: normal;
     font-weight: 400;
-    
 }
 
 button {
     background-color: #E55473;
     color: #FFFFFF;
     border: none;
-    /* border-color: #B4BA74; */
     font-family: lato;
     font-size: 18px;
     font-weight: 700;
     padding: 18px 36px;
     border-radius: 8px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #FF0339;
+    color: gray;
+    text-shadow: 2px 2px silver;
+    transition: all 1s;
+}
+
+/* header CSS */
 
 header {
     background-color: rgba(229, 84, 115, 10%)
@@ -46,9 +58,9 @@ header {
 }
 
 .banner .banner-text {
-    /* border: 1px solid black; */
     max-width: 600px;
 }
+
 .banner .banner-text * {
     margin-bottom: 30px;
 }
@@ -57,14 +69,99 @@ header {
     font-family: lato;
     font-size: 68px;
     color: #272727;
-    /* line-height: normal; */
     font-style: normal;
-    font-weight: 700;
-
+    font-weight: 900;
 }
 
 .banner .banner-img img {
-    /* border: 1px solid black; */
     width: 100%;
     vertical-align: middle;
+}
+
+/* main CSS */
+main {
+ padding: 100px 0px;
+}
+
+/* #featured {
+
+} */
+
+.section-heading {
+    max-width: 590px;
+    text-align: center;
+    margin: 0px auto 40px;
+}
+
+.section-heading h2{
+    margin-bottom: 10px;
+    color: #272727;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.section-heading p{
+    line-height: 32px;
+}
+
+.section-content {
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section-content .flower .flower-img {
+    height: 450px;
+    border-radius: 190px 190px 0px 0px;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.section-content .flower .flower-img img {
+    width: 100%;
+}
+
+.section-content .flower .one  {
+    background-color: rgba(167, 33, 98, 15%);
+}
+
+.section-content .flower .two  {
+    background-color: rgba(5, 151, 160, 15%)
+}
+
+.section-content .flower .three  {
+    background-color: rgba(71, 125, 17, 15%)
+}
+
+.section-content .flower p  {
+    color: #272727;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* delivery-support CSS */
+#delivery-support {
+    margin: 80px 0px;
+}
+
+.delivery-bg {
+    display: flex;
+    background-color: rgba(39, 39, 39, 5%);
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 8px;
+    padding: 60px 20px;
+}
+
+.contact .delivery {
+    margin-bottom: 20px;
+}
+
+.contact p{
+    color: rgba(39, 39, 39, 80%);
+    font-weight: 700;
 }
