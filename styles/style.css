@@ -29,13 +29,13 @@ button {
     padding: 18px 36px;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 1s;
 }
 
 button:hover {
     background-color: #FF0339;
     color: gray;
-    text-shadow: 2px 2px silver;
-    transition: all 1s;
+    text-shadow: 1px 1px silver;
 }
 
 /* header CSS */
@@ -55,6 +55,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
+    flex-wrap: wrap-reverse;
 }
 
 .banner .banner-text {
@@ -107,6 +108,7 @@ main {
 .section-content {
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -155,6 +157,12 @@ main {
     text-align: center;
     border-radius: 8px;
     padding: 60px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact {
+    min-width: 400px;
 }
 
 .contact .delivery {
@@ -164,4 +172,95 @@ main {
 .contact p{
     color: rgba(39, 39, 39, 80%);
     font-weight: 700;
+}
+
+/* hot deal CSS */
+#hot-deal {
+    background-color: rgba(229, 84, 115, 5%)
+}
+
+#hot-deal .hot-deal-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 40px;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+}
+
+#hot-deal .hot-deal-text {
+    max-width: 555px;
+}
+
+#hot-deal .hot-deal-text * {
+    margin-bottom: 22px;
+}
+
+#hot-deal .hot-deal-img {
+
+}
+
+#hot-deal .hot-deal-img img {
+    width: 100%;
+}
+
+/* Instagram Css */
+#instagram {
+    margin: 100px 0px;
+}
+
+.instagram-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px;
+
+}
+
+.insta-img {
+    max-width: 300px;
+    box-shadow: 2px 2px 4px silver;
+}
+
+.insta-img img {
+    width: 100%;
+    /* border: 1px solid pink; */
+}
+
+/* Latest Deals Css */
+#latest-deals {
+
+}
+
+.newsletter-bg {
+    background-image: url("/flowerAsset/Rectangle9.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 0px;
+    border-radius: 8px;
+    background-size: contain;
+}
+
+.newsletter {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+
+}
+
+.newsletter form input {
+    width: 100%;
+    padding: 18px 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.newsletter form input:focus {
+    outline: none;
 }
