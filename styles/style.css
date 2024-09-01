@@ -264,3 +264,34 @@ main {
 .newsletter form input:focus {
     outline: none;
 }
+
+/* Footer Css */
+#footer {
+    background: #111010;
+    padding: 150px 0px;
+}
+
+#footer .footer-content {
+    text-align: center;
+    
+}
+
+#footer .footer-content * {
+    margin-bottom: 20px;
+
+}
+
+#footer .footer-content h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px silver;
+}
+
+#footer .footer-content p {
+    color: rgba(255, 255, 255, 90%);
+    font-size: 18px;
+    max-width: 575px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
